@@ -1,6 +1,7 @@
 # AI-driven search for cheaper MMO servers (new idea, 2026-11-08)
 
-Status: **feasibility research running.** Nothing is built yet.
+Status: **feasibility verdict done (2026-11-08), see `feasibility.md`.** Nothing is built yet;
+waiting for Miles to choose the direction. Raw evidence is in `notes/`.
 
 The idea: use AI-driven algorithm search (in the style of DeepMind's AlphaEvolve and FunSearch,
 or open-source tools like OpenEvolve) to find new algorithms and rules that make MMO servers
