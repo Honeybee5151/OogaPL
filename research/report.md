@@ -1,6 +1,6 @@
 # tick-lang — Phase 1 research report
 
-Date: 2026-11-08. Author: Claude (research for Miles). Status: **finished, waiting for Miles's go-ahead before Phase 2.**
+Date: 2026-11-08. Author: Claude (research for Miles). Status: **finished. Project stopped here by Miles's decision (see "Decision" at the end).**
 
 ## How to read this
 
@@ -264,3 +264,15 @@ Strength ratings are my judgement of the evidence (GUESS), but every number in t
 - Berger et al. 2002 original PDF and the Accelerometer paper: numbers taken from the authors' own later paper and slides.
 - Erlang/P4/eBPF "won through constraints": not re-sourced this round.
 - No primary source measures the CPU cost of determinism (fixed point, no FMA) in a game. Phase 3 should measure it.
+
+---
+
+## Decision (2026-11-08)
+
+Miles decided to **stop after Phase 1**. His reason: AI coding assistants are already good at Rust and C++ and would have no examples of a new language, so it is easier to have AI write expert-level Rust directly.
+
+Options considered before stopping, kept here in case the idea is picked up again:
+1. **Strict Rust:** a checked Rust subset plus a runtime, like Unity's Burst ("a subset of C#"). The AI writes normal Rust and a checker rejects non-deterministic code.
+2. **A desync tester:** record inputs, replay, and compare state hashes per tick. It works for any server language.
+3. **Only the runtime library:** zones, rollback, arenas.
+4. **Stop.** This was chosen.
