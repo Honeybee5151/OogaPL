@@ -6,6 +6,7 @@ It makes the right design the only one you can write, so the compiler can optimi
 Status: **Phase 1 — research.** No code yet.
 
 - `research/report.md` — prior art, performance evidence, the case against, and a recommendation.
+- `research/notes/` — the raw evidence behind the report.
 
 Phases:
 1. Research (this phase) — then stop for Miles's go-ahead.
