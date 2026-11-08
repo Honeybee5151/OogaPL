@@ -22,6 +22,12 @@ cheaper and more efficient. This follows the tick-lang research in `research/`, 
 - **AI budget:** Miles has the Claude Ultra plan, which includes $200 a month of API credit
   (expires monthly, no rollover; API calls stop when it runs out). Claude Code itself is also
   covered by the plan.
+- **How searches run (decided 2026-11-08): option A, inside Claude Code** (agents in Claude Code
+  propose and test candidates), using the plan's Claude Code usage. Cloud sessions cannot store a
+  key for Anthropic's own API host, so the $200 API credit can only be used from a machine Miles
+  controls (his computer or Hetzner server, key in an environment variable there). That is
+  option B, kept for later, bigger runs.
+- **Check with Miles before the first run that spends API credit.**
 
 ## Proposed score (my proposal, not yet tested)
 
