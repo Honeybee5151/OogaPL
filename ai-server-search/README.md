@@ -18,6 +18,7 @@ cheaper and more efficient. This follows the tick-lang research in `research/`, 
   data. We build our own original test server and keep the two separate unless the team agrees
   in writing.
 - **Test server language:** Rust (if the research says go).
+- **Where it lives:** this folder in the OogaPL repo.
 - **AI budget:** Miles has the Claude Ultra plan, which includes $200 a month of API credit
   (expires monthly, no rollover; API calls stop when it runs out). Claude Code itself is also
   covered by the plan.
